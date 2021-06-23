@@ -12,7 +12,7 @@
            HorizontalOptions="Center" Text="Welcome to Xamarin Forms"
            VerticalOptions="CenterAndExpand" />
         <Button x:Name="AskForPermissionBtn" Text="Ask for permission (Android needed)" IsVisible="false" Clicked="AskForPermissionBtn_Clicked"/>
-          <Button x:Name="downloadBtn" Text="Install ChatPay" BackgroundColor="Black"  IsVisible="true" Clicked="downloadBtn_Clicked"/>
+          <Button x:Name="downloadBtn" Text="Install ChatPay" BackgroundColor="Black"  TextColor="White"  IsVisible="true" Clicked="downloadBtn_Clicked"/>
          <Button x:Name="EnableKeyBoardBtn" BackgroundColor="Black" TextColor="White" Text="Enable Keyboard"  Clicked="EnableKeyBoardBtn_Clicked"/>
         <Button x:Name="ForceUpdateBtn" BackgroundColor="Black" TextColor="White" Text="Change Keyboard"  Clicked="ForceUpdateBtn_Clicked"/>
          <Button x:Name="uninstallBtn" BackgroundColor="Red" TextColor="White" Text="Uninstall App"  Clicked="uninstallBtn_Clicked"/>
