@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ChatPay.AppInstallHelper;
+using ChatPayInstaller.Interfaces;
 using Xamarin.Forms;
 
 namespace ChatPayInstaller
@@ -52,6 +53,10 @@ namespace ChatPayInstaller
                     SMToken = "6670",
                     logDetails = new LogDetails() { DeviceIMEI = "web", DeviceOS = "web", HardwareIMEI = "Web", IPAddress = "" }
                 };
+
+                //Authenticate user through dependency service
+                DependencyService.Get<IAuthService>().AuthenticateUser(userdetails);
+
                 //ChatPay.AppInstallHelper.InstallationHelper.ToggleKeyboard();
                 var res = await ChatPay.AppInstallHelper.InstallationHelper.LaunchChatPay(userdetails);
                 if (res)
