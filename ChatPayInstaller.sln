@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ChatPay.AppInstallHelper.1.2.3.nupkg = ChatPay.AppInstallHelper.1.2.3.nupkg
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatPayKeyboard", "ChatPayKeyboard\ChatPayKeyboard.csproj", "{A6272C7D-54D5-4134-AEB5-561289A94DB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyboardExtension", "KeyboardExtension\KeyboardExtension.csproj", "{251E6835-B5BD-4B23-88A4-E4354CB3497A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,16 +62,16 @@ Global
 		{490740BD-022D-4337-BED7-3609B18F98F1}.Release|iPhone.Build.0 = Release|Any CPU
 		{490740BD-022D-4337-BED7-3609B18F98F1}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{490740BD-022D-4337-BED7-3609B18F98F1}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{A6272C7D-54D5-4134-AEB5-561289A94DB6}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
-		{A6272C7D-54D5-4134-AEB5-561289A94DB6}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{A6272C7D-54D5-4134-AEB5-561289A94DB6}.Debug|iPhone.Build.0 = Debug|iPhone
-		{A6272C7D-54D5-4134-AEB5-561289A94DB6}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{A6272C7D-54D5-4134-AEB5-561289A94DB6}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{A6272C7D-54D5-4134-AEB5-561289A94DB6}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
-		{A6272C7D-54D5-4134-AEB5-561289A94DB6}.Release|iPhone.ActiveCfg = Release|iPhone
-		{A6272C7D-54D5-4134-AEB5-561289A94DB6}.Release|iPhone.Build.0 = Release|iPhone
-		{A6272C7D-54D5-4134-AEB5-561289A94DB6}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{A6272C7D-54D5-4134-AEB5-561289A94DB6}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{251E6835-B5BD-4B23-88A4-E4354CB3497A}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{251E6835-B5BD-4B23-88A4-E4354CB3497A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{251E6835-B5BD-4B23-88A4-E4354CB3497A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{251E6835-B5BD-4B23-88A4-E4354CB3497A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{251E6835-B5BD-4B23-88A4-E4354CB3497A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{251E6835-B5BD-4B23-88A4-E4354CB3497A}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{251E6835-B5BD-4B23-88A4-E4354CB3497A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{251E6835-B5BD-4B23-88A4-E4354CB3497A}.Release|iPhone.Build.0 = Release|iPhone
+		{251E6835-B5BD-4B23-88A4-E4354CB3497A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{251E6835-B5BD-4B23-88A4-E4354CB3497A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

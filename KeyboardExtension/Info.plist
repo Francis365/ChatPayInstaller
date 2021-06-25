@@ -2,26 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleDisplayName</key>
+	<string>KeyboardExtension</string>
+	<key>CFBundleName</key>
+	<string>KeyboardExtension</string>
+	<key>CFBundleIdentifier</key>
+	<string>ng.sterling.chatpay.KeyboardExtension</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleDisplayName</key>
-	<string>ChatPayKeyboard</string>
-	<key>CFBundleExecutable</key>
-	<string>ChatPayKeyboard</string>
-	<key>CFBundleIdentifier</key>
-	<string>ng.sterling.chatpay.ChatPayKeyboard</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>com.companyname.ChatPayKeyboard</string>
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.0</string>
 	<key>MinimumOSVersion</key>
 	<string>14.5</string>
 	<key>NSExtension</key>
@@ -35,7 +31,7 @@
 			<key>PrimaryLanguage</key>
 			<string>en-US</string>
 			<key>RequestsOpenAccess</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.keyboard-service</string>

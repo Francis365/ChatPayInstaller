@@ -1,19 +1,17 @@
-﻿using Binding;
-using Foundation;
+﻿using System;
 
-using ObjCRuntime;
-using System;
 using UIKit;
+using Binding;
 
-namespace ChatPayKeyboard
+namespace KeyboardExtension
 {
     public partial class KeyboardViewController : UIInputViewController
     {
+        //UIButton nextKeyboardButton;
 
-        UIButton nextKeyboardButton;
-
-        public KeyboardViewController(IntPtr handle) : base(handle)
+        protected KeyboardViewController(IntPtr handle) : base(handle)
         {
+            // Note: this .ctor should not contain any initialization logic.
         }
 
         public override void DidReceiveMemoryWarning()
@@ -35,20 +33,20 @@ namespace ChatPayKeyboard
         {
             base.ViewDidLoad();
 
-            // Perform custom UI setup here
-            nextKeyboardButton = new UIButton(UIButtonType.System);
+            //// Perform custom UI setup here
+            //nextKeyboardButton = new UIButton(UIButtonType.System);
 
-            nextKeyboardButton.SetTitle("Next Keyboard", UIControlState.Normal);
-            nextKeyboardButton.SizeToFit();
-            nextKeyboardButton.TranslatesAutoresizingMaskIntoConstraints = false;
+            //nextKeyboardButton.SetTitle("Next Keyboard", UIControlState.Normal);
+            //nextKeyboardButton.SizeToFit();
+            //nextKeyboardButton.TranslatesAutoresizingMaskIntoConstraints = false;
 
-            nextKeyboardButton.AddTarget(this, new Selector("advanceToNextInputMode"), UIControlEvent.TouchUpInside);
+            //nextKeyboardButton.AddTarget(this, new Selector("advanceToNextInputMode"), UIControlEvent.TouchUpInside);
 
-            View.AddSubview(nextKeyboardButton);
+            //View.AddSubview(nextKeyboardButton);
 
-            var nextKeyboardButtonLeftSideConstraint = NSLayoutConstraint.Create(nextKeyboardButton, NSLayoutAttribute.Left, NSLayoutRelation.Equal, View, NSLayoutAttribute.Left, 1.0f, 0.0f);
-            var nextKeyboardButtonBottomConstraint = NSLayoutConstraint.Create(nextKeyboardButton, NSLayoutAttribute.Bottom, NSLayoutRelation.Equal, View, NSLayoutAttribute.Bottom, 1.0f, 0.0f);
-            View.AddConstraints(new[] { nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint });
+            //var nextKeyboardButtonLeftSideConstraint = NSLayoutConstraint.Create(nextKeyboardButton, NSLayoutAttribute.Left, NSLayoutRelation.Equal, View, NSLayoutAttribute.Left, 1.0f, 0.0f);
+            //var nextKeyboardButtonBottomConstraint = NSLayoutConstraint.Create(nextKeyboardButton, NSLayoutAttribute.Bottom, NSLayoutRelation.Equal, View, NSLayoutAttribute.Bottom, 1.0f, 0.0f);
+            //View.AddConstraints(new[] { nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint });
         }
 
         class callback : KeyboardControllerCallback
@@ -94,7 +92,19 @@ namespace ChatPayKeyboard
 
         public override void TextDidChange(IUITextInput textInput)
         {
+            //// The app has just changed the document's contents, the document context has been updated.
+            //UIColor textColor = null;
 
+            //if (TextDocumentProxy.KeyboardAppearance == UIKeyboardAppearance.Dark)
+            //{
+            //    textColor = UIColor.White;
+            //}
+            //else
+            //{
+            //    textColor = UIColor.Black;
+            //}
+
+            //nextKeyboardButton.SetTitleColor(textColor, UIControlState.Normal);
         }
     }
 }

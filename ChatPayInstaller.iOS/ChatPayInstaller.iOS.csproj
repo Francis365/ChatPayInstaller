@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Services\AuthenticationService.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,6 +116,9 @@
     </ImageAsset>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="NativeLibrary">
+      <HintPath>..\KeyboardExtension\NativeLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -135,9 +139,9 @@
       <Project>{490740BD-022D-4337-BED7-3609B18F98F1}</Project>
       <Name>ChatPayInstaller</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ChatPayKeyboard\ChatPayKeyboard.csproj">
-      <Project>{a6272c7d-54d5-4134-aeb5-561289a94db6}</Project>
-      <Name>ChatPayKeyboard</Name>
+    <ProjectReference Include="..\KeyboardExtension\KeyboardExtension.csproj">
+      <Project>{251e6835-b5bd-4b23-88a4-e4354cb3497a}</Project>
+      <Name>KeyboardExtension</Name>
       <IsAppExtension>true</IsAppExtension>
       <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
