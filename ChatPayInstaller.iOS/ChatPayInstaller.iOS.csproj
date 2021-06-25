@@ -135,10 +135,11 @@
       <Project>{490740BD-022D-4337-BED7-3609B18F98F1}</Project>
       <Name>ChatPayInstaller</Name>
     </ProjectReference>
-    <ProjectReference Include="..\KeyboardExtension\KeyboardExtension.csproj">
+    <ProjectReference Include="..\ChatPayKeyboard\ChatPayKeyboard.csproj">
+      <Project>{a6272c7d-54d5-4134-aeb5-561289a94db6}</Project>
+      <Name>ChatPayKeyboard</Name>
       <IsAppExtension>true</IsAppExtension>
-      <Project>{251E6835-B5BD-4B23-88A4-E4354CB3497A}</Project>
-      <Name>KeyboardExtension</Name>
+      <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
   </ItemGroup>
 </Project>
