@@ -2,6 +2,7 @@
 using ChatPay.AppInstallHelper;
 using ChatPayInstaller.Interfaces;
 using Xamarin.Forms;
+using Binding;
 
 [assembly: Dependency(typeof(KeyboardExtension.Services.AuthenticationService))]
 namespace KeyboardExtension.Services
@@ -10,7 +11,10 @@ namespace KeyboardExtension.Services
     {
         public void AuthenticateUser(UserDetails userDetails)
         {
-            throw new NotImplementedException();
+            //show view from binding library
+            var proxy = new KeyboardProxy();
+
+            proxy.OnLoginWithUsername(userDetails.SMUsername, userDetails.logDetails.DeviceOS, userDetails.logDetails.DeviceIMEI);
         }
     }
 }

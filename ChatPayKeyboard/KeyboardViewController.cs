@@ -67,7 +67,7 @@ namespace ChatPayKeyboard
             //show view from binding library
             var proxy = new KeyboardProxy();
 
-            proxy.OnloginWithViewController(this, new callback(this));
+            proxy.OnLaunchKeyboardWithViewController(this, new callback(this));
         }
 
         public override void TextWillChange(IUITextInput textInput)

@@ -70,7 +70,7 @@
     <Compile Include="KeyboardViewController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="NativeLibrary, Version=1.0.7842.39129, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="NativeLibrary, Version=1.0.7846.19003, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>.\NativeLibrary.dll</HintPath>
     </Reference>
@@ -92,13 +92,13 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="NativeLibrary.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\ChatPayInstaller\ChatPayInstaller.csproj">
       <Project>{490740bd-022d-4337-bed7-3609b18f98f1}</Project>
       <Name>ChatPayInstaller</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NativeLibrary.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.AppExtension.CSharp.targets" />
 </Project>
