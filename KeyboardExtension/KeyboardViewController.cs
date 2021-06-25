@@ -1,7 +1,7 @@
 ﻿using System;
 
 using UIKit;
-using Binding;
+using ChatPayInstaller.iOS.Helper;
 
 namespace KeyboardExtension
 {
@@ -49,40 +49,11 @@ namespace KeyboardExtension
             //View.AddConstraints(new[] { nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint });
         }
 
-        class callback : KeyboardControllerCallback
-        {
-
-            KeyboardViewController controller;
-
-            public callback(KeyboardViewController controller)
-            {
-                this.controller = controller;
-            }
-            public override void OnKeyPadPressedWithText(string text)
-            {
-                controller.TextDocumentProxy.InsertText(text);
-
-            }
-
-            public override void TextLeftOfCusorWithText(string text)
-            {
-
-            }
-
-            public override void TextRightOfCusorWithText(string text)
-            {
-
-            }
-        }
-
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
 
-            //show view from binding library
-            var proxy = new KeyboardProxy();
-
-            proxy.OnLaunchKeyboardWithViewController(this, new callback(this));
+            KeyboardHelper.LaunchKeyboard(this);
         }
 
         public override void TextWillChange(IUITextInput textInput)

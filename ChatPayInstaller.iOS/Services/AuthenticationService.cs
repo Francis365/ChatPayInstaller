@@ -4,8 +4,8 @@ using ChatPayInstaller.Interfaces;
 using Xamarin.Forms;
 using Binding;
 
-[assembly: Dependency(typeof(KeyboardExtension.Services.AuthenticationService))]
-namespace KeyboardExtension.Services
+[assembly: Dependency(typeof(ChatPayInstaller.iOS.Services.AuthenticationService))]
+namespace ChatPayInstaller.iOS.Services
 {
     public class AuthenticationService : IAuthService
     {

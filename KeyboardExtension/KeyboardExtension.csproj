@@ -87,10 +87,6 @@
     </MtouchVerbosity>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NativeLibrary, Version=1.0.7846.19003, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\NativeLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -116,6 +112,14 @@
     <PackageReference Include="Xamarin.Forms">
       <Version>5.0.0.2012</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChatPayInstaller.iOS\ChatPayInstaller.iOS.csproj">
+      <Project>{0206a44d-70a8-4f88-8b82-e175feb991cc}</Project>
+      <Name>ChatPayInstaller.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.AppExtension.CSharp.targets" />
 </Project>

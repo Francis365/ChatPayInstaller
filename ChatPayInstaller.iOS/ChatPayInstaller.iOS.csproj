@@ -63,6 +63,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Helper\KeyboardHelper.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Services\AuthenticationService.cs" />
@@ -139,11 +140,6 @@
       <Project>{490740BD-022D-4337-BED7-3609B18F98F1}</Project>
       <Name>ChatPayInstaller</Name>
     </ProjectReference>
-    <ProjectReference Include="..\KeyboardExtension\KeyboardExtension.csproj">
-      <Project>{251e6835-b5bd-4b23-88a4-e4354cb3497a}</Project>
-      <Name>KeyboardExtension</Name>
-      <IsAppExtension>true</IsAppExtension>
-      <IsWatchApp>false</IsWatchApp>
-    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
 </Project>
