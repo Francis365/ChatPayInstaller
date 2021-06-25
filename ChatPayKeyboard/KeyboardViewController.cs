@@ -10,6 +10,8 @@ namespace ChatPayKeyboard
     public partial class KeyboardViewController : UIInputViewController
     {
 
+        UIButton nextKeyboardButton;
+
         public KeyboardViewController(IntPtr handle) : base(handle)
         {
         }
@@ -32,6 +34,21 @@ namespace ChatPayKeyboard
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            // Perform custom UI setup here
+            nextKeyboardButton = new UIButton(UIButtonType.System);
+
+            nextKeyboardButton.SetTitle("Next Keyboard", UIControlState.Normal);
+            nextKeyboardButton.SizeToFit();
+            nextKeyboardButton.TranslatesAutoresizingMaskIntoConstraints = false;
+
+            nextKeyboardButton.AddTarget(this, new Selector("advanceToNextInputMode"), UIControlEvent.TouchUpInside);
+
+            View.AddSubview(nextKeyboardButton);
+
+            var nextKeyboardButtonLeftSideConstraint = NSLayoutConstraint.Create(nextKeyboardButton, NSLayoutAttribute.Left, NSLayoutRelation.Equal, View, NSLayoutAttribute.Left, 1.0f, 0.0f);
+            var nextKeyboardButtonBottomConstraint = NSLayoutConstraint.Create(nextKeyboardButton, NSLayoutAttribute.Bottom, NSLayoutRelation.Equal, View, NSLayoutAttribute.Bottom, 1.0f, 0.0f);
+            View.AddConstraints(new[] { nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint });
         }
 
         class callback : KeyboardControllerCallback
