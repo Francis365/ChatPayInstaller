@@ -55,15 +55,15 @@ namespace ChatPayInstaller
                 };
 
                 //Authenticate user through dependency service
-                DependencyService.Get<IAuthService>().AuthenticateUser(userdetails);
+                //DependencyService.Get<IAuthService>().AuthenticateUser(userdetails);
 
                 //ChatPay.AppInstallHelper.InstallationHelper.ToggleKeyboard();
                 var res = await ChatPay.AppInstallHelper.InstallationHelper.LaunchChatPay(userdetails);
-                if (res)
-                {
-                    await Task.Delay(2000);
-                    ChatPay.AppInstallHelper.InstallationHelper.ToggleKeyboard();
-                }
+                //if (res)
+                //{
+                //    await Task.Delay(2000);
+                //    ChatPay.AppInstallHelper.InstallationHelper.ToggleKeyboard();
+                //}
             }
             catch (Exception ex)
             {

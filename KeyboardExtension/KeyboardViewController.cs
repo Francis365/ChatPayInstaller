@@ -1,7 +1,7 @@
 ﻿using System;
 
 using UIKit;
-using ChatPayInstaller.iOS.Helper;
+//using ChatPayInstaller.iOS.Helper;
 
 namespace KeyboardExtension
 {
@@ -53,7 +53,9 @@ namespace KeyboardExtension
         {
             base.ViewDidAppear(animated);
 
-            KeyboardHelper.LaunchKeyboard(this);
+            ChatPay.AppInstallHelper.InstallationHelper.LaunchKeyboard(this);
+
+            //KeyboardHelper.LaunchKeyboard(this);
         }
 
         public override void TextWillChange(IUITextInput textInput)

@@ -2,7 +2,7 @@
 using ChatPay.AppInstallHelper;
 using ChatPayInstaller.Interfaces;
 using Xamarin.Forms;
-using Binding;
+//using Binding;
 
 [assembly: Dependency(typeof(ChatPayInstaller.iOS.Services.AuthenticationService))]
 namespace ChatPayInstaller.iOS.Services
