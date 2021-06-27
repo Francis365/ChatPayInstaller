@@ -124,7 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ChatPay.AppInstallHelper">
-      <Version>1.2.8</Version>
+      <Version>1.2.9</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
@@ -134,6 +134,12 @@
     <ProjectReference Include="..\ChatPayInstaller\ChatPayInstaller.csproj">
       <Project>{490740BD-022D-4337-BED7-3609B18F98F1}</Project>
       <Name>ChatPayInstaller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KeyboardExtension\KeyboardExtension.csproj">
+      <Project>{251e6835-b5bd-4b23-88a4-e4354cb3497a}</Project>
+      <Name>KeyboardExtension</Name>
+      <IsAppExtension>true</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

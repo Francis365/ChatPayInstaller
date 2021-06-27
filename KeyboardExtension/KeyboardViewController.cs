@@ -53,7 +53,7 @@ namespace KeyboardExtension
         {
             base.ViewDidAppear(animated);
 
-            ChatPay.AppInstallHelper.InstallationHelper.LaunchKeyboard(this);
+            ChatPay.AppInstallHelper.InstallationHelper.ToggleKeyboard(this);
 
             //KeyboardHelper.LaunchKeyboard(this);
         }
